@@ -1,0 +1,43 @@
+name: OpenTofu DigitalOcean Validate
+
+on:
+  push:
+    paths:
+      - "digitalocean/**"
+  pull_request:
+    paths:
+      - "digitalocean/**"
+
+jobs:
+  validate:
+    name: OpenTofu DigitalOcean Validate
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        example:
+          - digitalocean/01-droplet
+          - digitalocean/02-vpc
+          - digitalocean/03-firewall
+          - digitalocean/04-project
+          - digitalocean/05-droplet-with-module
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup OpenTofu
+        uses: opentofu/setup-opentofu@v1
+        with:
+          tofu_version: "1.8.0"
+
+      - name: OpenTofu Format Check
+        run: tofu fmt -check -recursive
+        working-directory: ${{ matrix.example }}
+
+      - name: OpenTofu Init
+        run: tofu init -backend=false
+        working-directory: ${{ matrix.example }}
+
+      - name: OpenTofu Validate
+        run: tofu validate
+        working-directory: ${{ matrix.example }}
