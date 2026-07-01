@@ -106,5 +106,6 @@ This prevents unexpected cloud costs when learning.
 
 ## Next Steps
 
+- `09-genai-with-opentofu.md` — applying OpenTofu to GenAI platforms
 - `../iac-best-practices/` — Complete best practices documentation
 - `../iac-best-practices/10-production-readiness-checklist.md` — Production checklist
