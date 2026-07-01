@@ -1,0 +1,13 @@
+# Example variable values for the dev environment
+# Copy to terraform.tfvars and customize
+# NEVER commit terraform.tfvars to version control
+
+project_name = "my-project"
+environment  = "dev"
+name_length  = 10
+
+tags = {
+  ManagedBy   = "opentofu"
+  Environment = "dev"
+  Project     = "my-project"
+}

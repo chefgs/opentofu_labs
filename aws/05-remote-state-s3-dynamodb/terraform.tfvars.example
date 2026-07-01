@@ -1,0 +1,6 @@
+# Replace state_bucket_name with a globally unique value
+state_bucket_name = "opentofu-state-your-unique-suffix-here"
+lock_table_name   = "opentofu-state-lock"
+aws_region        = "us-east-1"
+project_name      = "opentofu-lab"
+environment       = "dev"

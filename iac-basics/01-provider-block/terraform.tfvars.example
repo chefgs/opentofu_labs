@@ -1,0 +1,5 @@
+# Example variable values for the provider block example
+# Copy this file to terraform.tfvars and customize the values
+# Do NOT commit terraform.tfvars to version control
+
+string_length = 12
