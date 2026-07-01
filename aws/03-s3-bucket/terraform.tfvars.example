@@ -1,0 +1,6 @@
+# S3 bucket name must be globally unique
+# Replace with a unique name: use your username or account ID as a prefix
+bucket_name  = "opentofu-lab-your-unique-suffix-here"
+aws_region   = "us-east-1"
+project_name = "opentofu-lab"
+environment  = "dev"

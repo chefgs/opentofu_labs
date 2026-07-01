@@ -1,0 +1,6 @@
+project_id   = "your-gcp-project-id"
+project_name = "opentofu-lab"
+environment  = "dev"
+region       = "us-central1"
+zone         = "us-central1-a"
+machine_type = "e2-micro"

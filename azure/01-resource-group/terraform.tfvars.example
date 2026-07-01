@@ -1,0 +1,3 @@
+project_name = "opentofu-lab"
+environment  = "dev"
+location     = "East US"

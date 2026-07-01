@@ -1,0 +1,5 @@
+# Storage account name must be globally unique (3-24 lowercase alphanumeric)
+storage_account_name = "opentofulabchangeme"
+project_name         = "opentofulab"
+environment          = "dev"
+location             = "East US"

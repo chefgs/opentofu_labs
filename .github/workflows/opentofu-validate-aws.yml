@@ -1,0 +1,44 @@
+name: OpenTofu AWS Validate
+
+on:
+  push:
+    paths:
+      - "aws/**"
+  pull_request:
+    paths:
+      - "aws/**"
+
+jobs:
+  validate:
+    name: OpenTofu AWS Validate
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        example:
+          - aws/01-create-ec2
+          - aws/02-vpc-basics
+          - aws/03-s3-bucket
+          - aws/04-security-group
+          - aws/05-remote-state-s3-dynamodb
+          - aws/06-ec2-with-module
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup OpenTofu
+        uses: opentofu/setup-opentofu@v1
+        with:
+          tofu_version: "1.8.0"
+
+      - name: OpenTofu Format Check
+        run: tofu fmt -check -recursive
+        working-directory: ${{ matrix.example }}
+
+      - name: OpenTofu Init
+        run: tofu init -backend=false
+        working-directory: ${{ matrix.example }}
+
+      - name: OpenTofu Validate
+        run: tofu validate
+        working-directory: ${{ matrix.example }}

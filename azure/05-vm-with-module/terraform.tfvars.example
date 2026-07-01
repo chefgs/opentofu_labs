@@ -1,0 +1,6 @@
+project_name   = "opentofu-lab"
+environment    = "dev"
+location       = "East US"
+vm_size        = "Standard_B1s"
+admin_username = "azureuser"
+admin_password = "ChangeMe123!NotARealPassword"

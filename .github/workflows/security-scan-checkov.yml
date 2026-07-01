@@ -1,0 +1,27 @@
+name: Security Scan - Checkov
+
+on:
+  push:
+    paths:
+      - "**.tf"
+  pull_request:
+    paths:
+      - "**.tf"
+
+jobs:
+  checkov:
+    name: Checkov IaC Security Scan
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run Checkov
+        uses: bridgecrewio/checkov-action@v12
+        with:
+          directory: .
+          framework: terraform
+          soft_fail: true
+          output_format: cli
+          download_external_modules: false

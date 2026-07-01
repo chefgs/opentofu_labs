@@ -1,0 +1,15 @@
+# Example variable values
+# Copy to terraform.tfvars and customize (do not commit terraform.tfvars)
+
+project_name      = "my-project"
+environment       = "dev"
+name_length       = 10
+include_uppercase = false
+
+tags_list = ["opentofu", "tutorial", "iac"]
+
+tags = {
+  ManagedBy   = "opentofu"
+  Environment = "dev"
+  Purpose     = "tutorial"
+}
