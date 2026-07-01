@@ -1,0 +1,7 @@
+project_id   = "your-gcp-project-id"
+project_name = "opentofu-lab"
+environment  = "dev"
+region       = "us-central1"
+location     = "US"
+# Bucket names must be globally unique
+bucket_name = "opentofu-lab-your-unique-suffix-here"

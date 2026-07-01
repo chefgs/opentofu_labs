@@ -1,0 +1,7 @@
+project_id       = "your-gcp-project-id"
+project_name     = "opentofu-lab"
+environment      = "dev"
+region           = "us-central1"
+network_name     = "default"
+allowed_ssh_cidr = "0.0.0.0/0"
+internal_cidr    = "10.0.0.0/8"

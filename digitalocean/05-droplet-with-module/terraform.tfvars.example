@@ -1,0 +1,5 @@
+project_name = "opentofu-lab"
+environment  = "dev"
+region       = "nyc3"
+droplet_size = "s-1vcpu-1gb"
+image        = "ubuntu-22-04-x64"
