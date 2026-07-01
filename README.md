@@ -41,7 +41,7 @@ Both tools use HCL (HashiCorp Configuration Language) and share nearly identical
 | Area | Terraform | OpenTofu |
 |------|-----------|----------|
 | Origin | HashiCorp tool | Community fork of Terraform |
-| Governance | Vendor-led | Linux Foundation / CNCF Sandbox |
+| Governance | Community Edition & Vendor-led | Linux Foundation / CNCF Sandbox |
 | License | BSL (newer versions) | MPL 2.0 open-source |
 | CLI | `terraform` | `tofu` |
 | Configuration | HCL | HCL-compatible |
