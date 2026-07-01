@@ -29,7 +29,7 @@
 | Area | Terraform | OpenTofu |
 |------|-----------|----------|
 | **Origin** | HashiCorp tool (now IBM-owned) | Community fork of Terraform |
-| **Governance** | Vendor-led (HashiCorp/IBM) | Linux Foundation / CNCF Sandbox |
+| **Governance** | Community Edition & Vendor-led (HashiCorp/IBM) | Linux Foundation / CNCF Sandbox |
 | **License** | BSL 1.1 (newer versions) | MPL 2.0 (fully open-source) |
 | **CLI** | `terraform` | `tofu` |
 | **Configuration language** | HCL (HashiCorp Configuration Language) | HCL-compatible (same syntax) |
