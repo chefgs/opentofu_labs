@@ -82,7 +82,9 @@ opentofu_labs/
 │   ├── 05-modules.md
 │   ├── 06-opentofu-vs-terraform.md
 │   ├── 07-migration-guide.md
-│   └── 08-best-practices.md
+│   ├── 08-best-practices.md
+│   ├── 09-genai-with-opentofu.md
+│   └── 10-kubernetes-workloads-with-opentofu.md
 │
 ├── iac-basics/                            # IaC fundamentals
 │   ├── 01-provider-block/
@@ -167,6 +169,15 @@ Follow this path if you are new to OpenTofu or Infrastructure-as-Code:
 10. Try remote state in aws/05-remote-state-s3-dynamodb/
 11. Add validation and security scanning from iac-best-practices/
 ```
+
+---
+
+## 🧠 Scenario Guides
+
+Once you understand the basics, these guides show how OpenTofu can support real application platforms:
+
+- [`docs/09-genai-with-opentofu.md`](docs/09-genai-with-opentofu.md) — using OpenTofu for GenAI application infrastructure
+- [`docs/10-kubernetes-workloads-with-opentofu.md`](docs/10-kubernetes-workloads-with-opentofu.md) — managing Kubernetes workloads with OpenTofu
 
 ---
 
